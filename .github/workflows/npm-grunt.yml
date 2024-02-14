@@ -25,7 +25,7 @@ jobs:
         source ./emsdk_env.sh
         cd ../binding
         emcmake cmake .
-        emmake
+        #emmake
         cd ..
     
     - name: Upload artifact
