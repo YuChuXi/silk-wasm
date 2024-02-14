@@ -27,9 +27,11 @@ jobs:
         emcmake cmake .
         #emmake
         cd ..
+        zip -q -r output.zip ./
+
     
     - name: Upload artifact
       uses: actions/upload-artifact@v3
       with:
         name: a
-        path: ./
+        file: output.zip
