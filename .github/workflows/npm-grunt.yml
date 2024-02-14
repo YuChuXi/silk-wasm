@@ -30,8 +30,8 @@ jobs:
         zip -q -r output.zip ./
 
     
-    - name: Upload artifact
-      uses: actions/upload-artifact@v3
+    - name: Upload Actions File
+      uses: actions/upload-artifact@v1.0.0
       with:
-        name: a
-        file: output.zip
+        name: release
+        path: output.zip
