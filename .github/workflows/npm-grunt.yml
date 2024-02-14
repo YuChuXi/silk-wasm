@@ -27,4 +27,9 @@ jobs:
         emcmake cmake .
         emmake ninja
         cd ..
-        
+    
+    - name: Upload artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: a?
+        path: ./
